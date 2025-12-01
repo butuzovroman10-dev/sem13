@@ -1,19 +1,77 @@
-CMakeLists.txt.user
+# Сборка
+build/
+cmake-build-debug/
+cmake-build-release/
+CMakeFiles/
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
 cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
-CMakeUserPresets.json
+Makefile
+*.cmake
+*.cbp
 
-# CLion
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#cmake-build-*
+# Исполняемые файлы
+DecisionTreeComparison
+*.exe
+*.out
+*.app
+
+# Файлы IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Выходные данные
+output/
+!output/README.md
+
+# Временные файлы
+*.tmp
+*.temp
+
+# Графические файлы деревьев (генерируются автоматически)
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Отчеты HTML (можно игнорировать, но лучше хранить)
+# *.html
+
+# Логи
+*.log
+*.txt
+
+# Данные
+*.csv
+*.data
+*.dat
+
+# Системные файлы
+Thumbs.db
+
+# Файлы резервных копий
+*.bak
+*.backup
+
+# Python (если будет использоваться)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Документация
+docs/_build/
+docs/build/
+
+# Тестовые файлы
+*.test
+*.spec
